@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>To-Do List</h1>
+            <div class="hr"></div>
+            <h2>Make your task</h2>
+
+            <label id="Titlu"> Titlu: </label>
+            <input type="text" id="titleInput" name="Titlu" maxlength="50"><br>
+
+            <label>Detali:</label><br>
+            <textarea name id="details" cols="50" rows="5"
+                maxlength="200"></textarea>
+
+            <br>
+            <button id="btn_add"></button>
+            <br>
+
+            <h2>Taskuri externe</h2>
+            <div class="hr"></div>
+            <ul><li id="count">Nici un task prezent</li></ul>
+            <ul id="external_task_list">
+
+            </ul>
+            <div>
+                <button id="get_external_task">Populeaza taskuri
+                    externe</button>
+            </div>
+            <h2>Taskuri in progres</h2>
+            <div class="hr"></div>
+            <ul id="in_progress_list"></ul>
+        </div>
+    </body>
+
+</html>
